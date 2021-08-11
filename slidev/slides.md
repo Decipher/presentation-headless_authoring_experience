@@ -167,9 +167,10 @@ layout: two-cols
 
 ---
 image: >-
-  https://images.ctfassets.net/vkdbses00qqt/Dz58dBKd9TTfnQaIcau2F/9b7b94b3be605195a65e88633dbe9e79/gatsbyjs.com_Keyvisual_4-2021.jpg?w=1120&h=1360&q=80&fm=webp
+  https://images.ctfassets.net/vkdbses00qqt/Dz58dBKd9TTfnQaIcau2F/9b7b94b3be605195a65e88633dbe9e79/gatsbyjs.com_Keyvisual_4-2021.jpg?w=960&h=1080&q=80
 layout: image-right
 ---
+
 # Gatsby
 
 [Gatsbyjs.com](https://www.gatsbyjs.com/)
@@ -180,7 +181,7 @@ layout: image-right
 +
 
 ---
-layout: two-cols
+layout: image-left
 ---
 
 # Headless
@@ -221,7 +222,7 @@ layout: two-cols
 
 - Content Authoring in Jamstack
 - Content Rendering in Jamstack
-- Content Storage in Drupal
+- Content Storage in Drupal via Tome Sync
 
 </div>
 
@@ -231,7 +232,9 @@ layout: two-cols
 flowchart LR
   subgraph GitPod
     subgraph L*MP
+      TomeSync --> Drupal
       Drupal --> DB
+      Drupal --> TomeSync
       DB --> Drupal
     end
     Jamstack
