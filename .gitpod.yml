@@ -20,6 +20,11 @@ tasks:
       gp sync-await drupal
       cd $GITPOD_REPO_ROOT/nuxt && yarn storybook --ci
 
+  # SlideV
+  - name: slidev
+    init: yarn
+    command: yarn dev
+
   # Drupal
   - name: ddev/drupal
     init: |
