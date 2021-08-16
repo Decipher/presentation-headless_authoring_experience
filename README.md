@@ -16,7 +16,7 @@ This repository is setup to be used with GitPod.io
 Open GitPod workspace: https://gitpod.io#github.com/Decipher/presentation-headless_authoring_experience
 
 
-### `8008`: DDev / Drupal
+### `8080`: DDev / Drupal
 
 [Drupal](https://drupal.org) is avialable inside the GitPod, on port `8080`, using [Composer 2](https://getcomposer.org/) and [DDev](https://ddev.readthedocs.io/).
 
