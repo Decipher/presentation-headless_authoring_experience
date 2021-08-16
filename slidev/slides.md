@@ -175,10 +175,16 @@ layout: image-right
 
 [Gatsbyjs.com](https://www.gatsbyjs.com/)
 
-+
-+
-+
-+
++ Static site builder
++ Pages created at build time
++ Rehydrates to a React app
++ Strong Drupal integration
+
+<!--
+- hard problems - editing context, preview, slow builds, large builds
+- gatsby-plugin-drupal transforms Json:API responses to GraphQL, this is inhibiting if you're doing headless (use GraphQL instead)
+
+ -->
 
 ---
 layout: image-left
