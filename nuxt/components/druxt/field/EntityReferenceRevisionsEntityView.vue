@@ -39,8 +39,11 @@
       <input id="modal" type="checkbox" class="modal-toggle" />
       <div class="modal">
         <div class="modal-box">
-          <select v-model="type" class="mb-3 select select-bordered w-full max-w-xs">
-            <option disabled="disabled" selected="selected">
+          <select
+            v-model="addType"
+            class="mb-3 select select-bordered w-full max-w-xs"
+          >
+            <option disabled="disabled">
               Paragraph type
             </option>
             <option
@@ -53,10 +56,21 @@
             </option>
           </select>
 
-          <DruxtEntityForm v-if="type" :type="`paragraph--${type}`" />
+          <DruxtEntityForm
+            v-if="addType"
+            ref="addForm"
+            v-model="addResource"
+            :type="`paragraph--${addType}`"
+          />
 
           <div class="modal-action">
-            <label v-if="type" for="modal" class="btn btn-primary">Add</label>
+            <label
+              v-if="addType"
+              for="modal"
+              class="btn btn-primary"
+              @click.prevent="onAddAnother"
+              >Add</label
+            >
             <label for="modal" class="btn">Close</label>
           </div>
         </div>
@@ -82,16 +96,19 @@ export default {
   },
 
   data: () => ({
-    type: null,    
+    addResource: undefined,
+    addType: undefined,
   }),
 
   methods: {
-    onAddAnother() {
+    async onAddAnother() {
+      const result = await this.$refs.addForm.onSubmit()
+      console.log(result)
       // TODO: Add support for non-relationship fields.
-      this.model.data.push({
-        type: null,
-        id: null,
-      })
+      // this.model.data.push({
+      //   type: null,
+      //   id: null,
+      // })
     },
   },
 }

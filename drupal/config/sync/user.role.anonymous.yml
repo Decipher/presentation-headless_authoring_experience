@@ -11,6 +11,7 @@ dependencies:
     - druxt
     - filter
     - node
+    - paragraphs_type_permissions
     - search
     - system
 _core:
@@ -25,6 +26,10 @@ permissions:
   - 'access druxt resources'
   - 'access site-wide contact form'
   - 'create article content'
+  - 'create paragraph content wysiwyg'
+  - 'delete paragraph content wysiwyg'
   - 'edit any article content'
   - 'search content'
+  - 'update paragraph content wysiwyg'
   - 'use text format restricted_html'
+  - 'view paragraph content wysiwyg'
