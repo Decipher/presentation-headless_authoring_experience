@@ -1,20 +1,11 @@
-<template>
-  <!-- eslint-disable-next-line vue/no-v-html -->
-  <p v-if="!$attrs.inlineEdit" v-html="model.processed" />
-  <AppWysiwyg v-else v-model="model.processed" />
-</template>
-
 <script>
-import { DruxtEntityMixin } from 'druxt-entity'
+import TextDefault from './TextDefault'
 
 export default {
-  mixins: [DruxtEntityMixin],
+  extends: TextDefault,
 
-  props: {
-    fields: {
-      type: Array,
-      default: () => [],
-    }
-  }
+  computed: {
+    html: ({ model }) => model.processed,
+  },
 }
 </script>

@@ -21,8 +21,10 @@
           />
         </svg>
       </div>
+
       <DruxtEntity
-        v-if="item.id"
+        class="flex-grow"
+        :mode="schema.settings.display.view_mode"
         :type="item.type"
         :uuid="item.id"
         :inline-edit="inlineEdit"
