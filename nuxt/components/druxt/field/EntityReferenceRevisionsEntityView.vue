@@ -23,12 +23,14 @@
       </div>
 
       <DruxtEntity
+        v-if="item.id"
         class="flex-grow"
         :mode="schema.settings.display.view_mode"
         :type="item.type"
         :uuid="item.id"
         :inline-edit="inlineEdit"
       />
+      <DruxtEntityForm v-else class="flex-grow mb-3" :type="item.type" />
     </div>
 
     <div slot="footer">
@@ -41,13 +43,8 @@
       <input id="modal" type="checkbox" class="modal-toggle" />
       <div class="modal">
         <div class="modal-box">
-          <select
-            v-model="addType"
-            class="mb-3 select select-bordered w-full max-w-xs"
-          >
-            <option disabled="disabled">
-              Paragraph type
-            </option>
+          <select class="mb-3 select select-bordered w-full max-w-xs" @change="(e) => addType = e.target.value">
+            <option disabled="disabled" selected>Paragraph type</option>
             <option
               v-for="option of Object.keys(
                 schema.settings.config.handler_settings.target_bundles
@@ -103,14 +100,14 @@ export default {
   }),
 
   methods: {
-    async onAddAnother() {
-      const result = await this.$refs.addForm.onSubmit()
-      console.log(result)
+    onAddAnother() {
+      // const result = await this.$refs.addForm.onSubmit()
+      // console.log(result)
       // TODO: Add support for non-relationship fields.
-      // this.model.data.push({
-      //   type: null,
-      //   id: null,
-      // })
+      this.model.data.push({
+        type: this.$refs.addForm.model.type,
+        id: null,
+      })
     },
   },
 }

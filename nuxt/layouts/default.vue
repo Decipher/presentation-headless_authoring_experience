@@ -48,7 +48,7 @@
 <script>
 export default {
   data: () => ({
-    theme: 'light',
+    theme: 'wireframe',
     themes: [
       'light',
       'dark',
