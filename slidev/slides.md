@@ -14,6 +14,10 @@ title: Headless
 
 And the Content Authoring Experience
 
+<div class="mb-5"/>
+
+[ds21-headless-axe.slides.realityloop.com](http://ds21-headless-axe.slides.realityloop.com/)
+
 
 ---
 layout: image-right
@@ -298,6 +302,15 @@ layout: two-cols
 
 <div class="mb-2" />
 
+### This presentation
+
+<div class="text-sm my-3">
+
+- Slides: [ds21-headless-axe.slides.realityloop.com](https://ds21-headless-axe.slides.realityloop.com/)
+- GitPod: [gitpod.io#snapshot/03909c8e-fa76-49e5-9a5a-babe5239228b](https://gitpod.io#snapshot/03909c8e-fa76-49e5-9a5a-babe5239228b)
+
+</div>
+
 ### Druxt
 
 <div class="text-sm my-3">
@@ -312,8 +325,8 @@ layout: two-cols
 
 <div class="text-sm my-3">
 
-- Project / Docs: https://www.gatsbyjs.com/
-- Github: https://github.com/gatsbyjs/gatsby
+- Project / Docs: [gatsbyjs.com](https://www.gatsbyjs.com/)
+- Github: [github.com/gatsbyjs/gatsby](https://github.com/gatsbyjs/gatsby)
 
 </div>
 
