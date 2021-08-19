@@ -57,7 +57,7 @@ layout: section
 5. Discussion
 
 ---
-image: /images/26803da2823d3f5044b7902ba01dd450.webp
+image: /26803da2823d3f5044b7902ba01dd450.webp
 layout: image-right
 position: right
 ---
@@ -102,7 +102,7 @@ Cons:
 -->
 
 ---
-image: /images/drupal-embed.png
+image: /drupal-embed.png
 layout: image-left
 position: right
 ---
@@ -139,7 +139,7 @@ Lullabot / Widgets: https://www.lullabot.com/articles/progressive-decoupling-mad
 -->
 
 ---
-image: /images/umami.fb2904b6.png
+image: /umami.fb2904b6.png
 layout: image-right
 position: left
 ---
@@ -181,7 +181,7 @@ Cons:
 -->
 
 ---
-image: /images/headless-druxt.png
+image: /headless-druxt.png
 layout: image-left
 ---
 
@@ -260,7 +260,7 @@ layout: section
 
 ---
 layout: two-cols
-image: /images/umami.fb2904b6.png
+image: /umami.fb2904b6.png
 ---
 
 <img src="https://druxtjs.org/logo.svg" class="w-90" />
@@ -276,7 +276,7 @@ image: /images/umami.fb2904b6.png
 + Vue.js/Nuxt.js
 
 ---
-image: /images/gatsbyjs.com_Keyvisual_4-2021.jpg
+image: /gatsbyjs.com_Keyvisual_4-2021.jpg
 layout: image-right
 ---
 
