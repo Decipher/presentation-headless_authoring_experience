@@ -1,0 +1,36 @@
+uuid: efe61d1e-b996-4037-99d8-ff6be8053586
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.article
+    - paragraphs.paragraphs_type.testimonial
+    - paragraphs.paragraphs_type.wysiwyg
+  module:
+    - entity_reference_revisions
+id: node.article.field_content
+field_name: field_content
+entity_type: node
+bundle: article
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      wysiwyg: wysiwyg
+      testimonial: testimonial
+    target_bundles_drag_drop:
+      testimonial:
+        enabled: true
+        weight: 3
+      wysiwyg:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

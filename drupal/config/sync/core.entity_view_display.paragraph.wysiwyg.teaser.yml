@@ -1,0 +1,24 @@
+uuid: d24eb789-b197-4a76-9557-eaa59c2da7c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.wysiwyg.field_content
+    - paragraphs.paragraphs_type.wysiwyg
+  module:
+    - text
+id: paragraph.wysiwyg.teaser
+targetEntityType: paragraph
+bundle: wysiwyg
+mode: teaser
+content:
+  field_content:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    type: text_summary_or_trimmed
+    region: content
+hidden: {  }

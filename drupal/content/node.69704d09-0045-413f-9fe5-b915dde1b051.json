@@ -84,13 +84,6 @@
             "langcode": "en"
         }
     ],
-    "body": [
-        {
-            "value": "<p>This is a second piece of content.<\/p>\r\n",
-            "format": "basic_html",
-            "summary": ""
-        }
-    ],
     "comment": [
         {
             "status": 2,

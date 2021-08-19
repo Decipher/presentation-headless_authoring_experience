@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - node.type.article
   module:
     - comment
     - contact
     - druxt
     - filter
+    - node
+    - paragraphs_type_permissions
     - search
     - system
 _core:
@@ -22,5 +25,15 @@ permissions:
   - 'access content'
   - 'access druxt resources'
   - 'access site-wide contact form'
+  - 'create article content'
+  - 'create paragraph content testimonial'
+  - 'create paragraph content wysiwyg'
+  - 'delete paragraph content testimonial'
+  - 'delete paragraph content wysiwyg'
+  - 'edit any article content'
   - 'search content'
+  - 'update paragraph content testimonial'
+  - 'update paragraph content wysiwyg'
   - 'use text format restricted_html'
+  - 'view paragraph content testimonial'
+  - 'view paragraph content wysiwyg'

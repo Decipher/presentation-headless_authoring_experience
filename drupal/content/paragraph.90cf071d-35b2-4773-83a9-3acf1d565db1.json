@@ -1,0 +1,48 @@
+{
+    "uuid": [
+        {
+            "value": "90cf071d-35b2-4773-83a9-3acf1d565db1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "wysiwyg",
+            "target_type": "paragraphs_type",
+            "target_uuid": "03d85807-544f-450f-94ea-9ab5ac3b9931"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2021-08-15T06:45:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_content": [
+        {
+            "value": "<p>It's also a <em>Paragraph<\/em>.<\/p>\r\n",
+            "format": "basic_html",
+            "summary": ""
+        }
+    ]
+}

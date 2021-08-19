@@ -1,0 +1,57 @@
+{
+    "uuid": [
+        {
+            "value": "b029afa2-d813-4b8a-8472-4829c4d2a4b4"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "testimonial",
+            "target_type": "paragraphs_type",
+            "target_uuid": "9559d043-9b8c-4040-a437-13b246571eb3"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2021-08-19T00:37:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_attestant_name": [
+        {
+            "value": "Ofer Shaal"
+        }
+    ],
+    "field_content": [
+        {
+            "value": "<p>Druxt is awesome!<\/p>\r\n",
+            "format": "basic_html",
+            "summary": ""
+        }
+    ]
+}

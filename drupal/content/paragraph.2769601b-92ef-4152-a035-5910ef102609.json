@@ -1,0 +1,48 @@
+{
+    "uuid": [
+        {
+            "value": "2769601b-92ef-4152-a035-5910ef102609"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "wysiwyg",
+            "target_type": "paragraphs_type",
+            "target_uuid": "03d85807-544f-450f-94ea-9ab5ac3b9931"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2021-08-15T06:30:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_content": [
+        {
+            "value": "<p>Hello world<\/p>\r\n\r\n<p>This is a <strong>Wysiwyg<\/strong> field.<\/p>\r\n",
+            "format": "basic_html",
+            "summary": ""
+        }
+    ]
+}

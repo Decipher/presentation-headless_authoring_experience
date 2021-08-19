@@ -1,0 +1,57 @@
+{
+    "uuid": [
+        {
+            "value": "c4209fad-d14a-4924-82cb-4583ff1720e3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "testimonial",
+            "target_type": "paragraphs_type",
+            "target_uuid": "9559d043-9b8c-4040-a437-13b246571eb3"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2021-08-19T00:38:09+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_attestant_name": [
+        {
+            "value": "Brian Gilbert"
+        }
+    ],
+    "field_content": [
+        {
+            "value": "<p>Front end this way is so much better, I'm never touching twig again!<\/p>\r\n",
+            "format": "basic_html",
+            "summary": ""
+        }
+    ]
+}
