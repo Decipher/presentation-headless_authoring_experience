@@ -327,8 +327,8 @@ layout: two-cols
 
 <div class="text-sm my-3">
 
-- Project / Docs: https://www.gatsbyjs.com/
-- Github: https://github.com/gatsbyjs/gatsby
+- Project / Docs: [gatsbyjs.com](https://www.gatsbyjs.com/)
+- Github: [github.com/gatsbyjs/gatsby](https://github.com/gatsbyjs/gatsby)
 
 </div>
 
