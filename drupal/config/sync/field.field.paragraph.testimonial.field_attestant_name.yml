@@ -1,0 +1,19 @@
+uuid: cc5c9330-6cca-43b7-afe5-46db0970feee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attestant_name
+    - paragraphs.paragraphs_type.testimonial
+id: paragraph.testimonial.field_attestant_name
+field_name: field_attestant_name
+entity_type: paragraph
+bundle: testimonial
+label: 'Attestant name'
+description: 'Enter the name of the person giving testimonial.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

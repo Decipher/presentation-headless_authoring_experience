@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.article
+    - paragraphs.paragraphs_type.testimonial
     - paragraphs.paragraphs_type.wysiwyg
   module:
     - entity_reference_revisions
@@ -24,7 +25,11 @@ settings:
     negate: 0
     target_bundles:
       wysiwyg: wysiwyg
+      testimonial: testimonial
     target_bundles_drag_drop:
+      testimonial:
+        enabled: true
+        weight: 3
       wysiwyg:
         enabled: true
         weight: 2
