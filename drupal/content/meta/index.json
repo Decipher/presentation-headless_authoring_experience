@@ -7,6 +7,8 @@
         "user.2e50a81a-35aa-4371-a62a-244cbf2b5d91",
         "paragraph.2769601b-92ef-4152-a035-5910ef102609",
         "paragraph.90cf071d-35b2-4773-83a9-3acf1d565db1",
+        "paragraph.b029afa2-d813-4b8a-8472-4829c4d2a4b4",
+        "paragraph.c4209fad-d14a-4924-82cb-4583ff1720e3",
         "taxonomy_term.6ce49218-0369-4c0d-8b09-84d4444d339c"
     ],
     "node.69704d09-0045-413f-9fe5-b915dde1b051": [
@@ -14,5 +16,7 @@
     ],
     "taxonomy_term.6ce49218-0369-4c0d-8b09-84d4444d339c": [],
     "paragraph.2769601b-92ef-4152-a035-5910ef102609": [],
-    "paragraph.90cf071d-35b2-4773-83a9-3acf1d565db1": []
+    "paragraph.90cf071d-35b2-4773-83a9-3acf1d565db1": [],
+    "paragraph.b029afa2-d813-4b8a-8472-4829c4d2a4b4": [],
+    "paragraph.c4209fad-d14a-4924-82cb-4583ff1720e3": []
 }
