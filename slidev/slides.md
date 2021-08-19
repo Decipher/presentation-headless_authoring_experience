@@ -27,7 +27,7 @@ src: ./slide-presenter-stuartclark.md
 
 ---
 layout: image-left
-image: https://www.drupal.org/files/21784549635_9618b3afe0_z.jpg
+image: /21784549635_9618b3afe0_z.jpg
 ---
 
 # Hello!
@@ -57,8 +57,7 @@ layout: section
 5. Discussion
 
 ---
-image: >-
-  https://cdn.dribbble.com/users/9683/screenshots/12232498/media/26803da2823d3f5044b7902ba01dd450.png?compress=1&resize=1200x900
+image: /26803da2823d3f5044b7902ba01dd450.webp
 layout: image-right
 position: right
 ---
@@ -103,7 +102,7 @@ Cons:
 -->
 
 ---
-image: https://mateuaguilo.com/assets/images/drupal-embed.png
+image: /drupal-embed.png
 layout: image-left
 position: right
 ---
@@ -140,7 +139,7 @@ Lullabot / Widgets: https://www.lullabot.com/articles/progressive-decoupling-mad
 -->
 
 ---
-image: https://site.druxtjs.org/assets/img/umami.fb2904b6.png
+image: /umami.fb2904b6.png
 layout: image-right
 position: left
 ---
@@ -182,7 +181,7 @@ Cons:
 -->
 
 ---
-image: /images/headless-druxt.png
+image: /headless-druxt.png
 layout: image-left
 ---
 
@@ -261,7 +260,7 @@ layout: section
 
 ---
 layout: two-cols
-image: https://site.druxtjs.org/assets/img/umami.fb2904b6.png
+image: /umami.fb2904b6.png
 ---
 
 <img src="https://druxtjs.org/logo.svg" class="w-90" />
@@ -277,8 +276,7 @@ image: https://site.druxtjs.org/assets/img/umami.fb2904b6.png
 + Vue.js/Nuxt.js
 
 ---
-image: >-
-  https://images.ctfassets.net/vkdbses00qqt/Dz58dBKd9TTfnQaIcau2F/9b7b94b3be605195a65e88633dbe9e79/gatsbyjs.com_Keyvisual_4-2021.jpg?w=960&h=1080&q=80
+image: /gatsbyjs.com_Keyvisual_4-2021.jpg
 layout: image-right
 ---
 
