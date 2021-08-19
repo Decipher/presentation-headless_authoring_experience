@@ -1,0 +1,32 @@
+uuid: ad7dd4be-51d1-411f-a46c-824a7b19f2b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.testimonial.field_attestant_name
+    - field.field.paragraph.testimonial.field_content
+    - paragraphs.paragraphs_type.testimonial
+  module:
+    - text
+id: paragraph.testimonial.teaser
+targetEntityType: paragraph
+bundle: testimonial
+mode: teaser
+content:
+  field_attestant_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_content:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }
