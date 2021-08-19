@@ -27,7 +27,7 @@ src: ./slide-presenter-stuartclark.md
 
 ---
 layout: image-left
-image: /images/21784549635_9618b3afe0_z.jpg
+image: /21784549635_9618b3afe0_z.jpg
 ---
 
 # Hello!
