@@ -47,10 +47,10 @@ layout: section
 # Table of Contents
 
 1. Hello!
-2. Traditional CMS
-3. Decoupled CMS
-4. Headless CMS
-5. Serverless CMS
+2. Drupal and Decoupled
+3. The technology
+4. Demos
+5. Discussion
 
 ---
 image: >-
@@ -70,6 +70,8 @@ position: right
 
 </div>
 
+<div class="absolute bottom-0">
+
 ```mermaid {theme: 'neutral', scale: 0.75}
 flowchart LR
   subgraph L*MP
@@ -80,9 +82,20 @@ flowchart LR
   Drupal --> Browser
 ```
 
+</div>
+
 <!--
+Traditional CMS === Drupal
+
 Brian Gilbert to talk to this?
-Paragraphs, Gin, etc.
+
+Pros:
+- Super powerful, can do anything you want it to do.
+- Modules and Themes make it even more powerful: Paragraphs, Gin, etc.
+
+Cons:
+- Twig/PHP theming
+- Complex content editing UI
 -->
 
 ---
@@ -97,10 +110,12 @@ position: right
 <div class="text-sm my-5">
 
 - Content Authoring in Drupal
-- Content Rendering in Drupal
+- Content Rendering in Drupal and JS
 - Content Storage in Drupal
 
 </div>
+
+<div class="absolute bottom-0">
 
 ```mermaid {theme: 'neutral', scale: 0.75}
 flowchart LR
@@ -112,8 +127,12 @@ flowchart LR
   Drupal --> Browser
 ```
 
+</div>
+
 <!--
 Jack Taranto to demo and talk to pros/cons.
+
+Lullabot / Widgets: https://www.lullabot.com/articles/progressive-decoupling-made-easy
 -->
 
 ---
@@ -133,8 +152,9 @@ position: left
 
 </div>
 
+<div class="absolute bottom-0">
 
-```mermaid {theme: 'neutral', scale: 0.6}
+```mermaid {theme: 'neutral', scale: 0.75}
 flowchart LR
   subgraph L*MP
     Drupal --> DB
@@ -145,12 +165,99 @@ flowchart LR
   Jamstack --> Browser
 ```
 
+</div>
+
 <!--
-Stuart / Lee to talk to.
+Pros:
+- Full control of the rendering technology; Vue, React, etc
+- Ability to decouple authoring as well as rendering.
+- Can take advantage of Frontend frameworks; Next, Nuxt, Druxt
+
+Cons:
+- Drupal skills not 100% transferable
 -->
 
 ---
+image: /images/headless-druxt.png
+layout: image-left
+---
+
+# Headless
+### = Fully Decoupled
+### + Decoupled Authoring Experience
+
+
+<div class="text-sm my-5">
+
+- Content Authoring in Jamstack
+- Content Rendering in Jamstack
+- Content Storage in Drupal
+
+</div>
+
+<div class="absolute bottom-0">
+
+```mermaid {theme: 'neutral', scale: 0.75}
+flowchart LR
+  subgraph L*MP
+    Drupal --> DB
+    DB --> Drupal
+  end
+  Author --> Jamstack
+  Drupal --> Jamstack
+  Jamstack --> Drupal
+  Jamstack --> Browser
+```
+
+</div>
+
+---
+id: xQK03PqcNZ8
+layout: youtube-right
+---
+
+# Serverless
+### = (Fully Decoupled + Cloud IDE + Full Static)
+### + Static hosting
+
+<div class="text-sm my-5">
+
+- Content Authoring in Jamstack
+- Content Rendering in Jamstack
+- Content Storage in Drupal via Tome Sync
+
+</div>
+<div class="absolute bottom-0">
+
+```mermaid {theme: 'neutral', scale: 0.7}
+flowchart LR
+  subgraph GitPod
+    subgraph L*MP
+      TomeSync --> Drupal
+      Drupal --> DB
+      Drupal --> TomeSync
+      DB --> Drupal
+    end
+    Jamstack
+  end
+  Author --> Jamstack
+  Drupal --> Jamstack
+  Jamstack --> Drupal
+  Jamstack -- Deploy Static --> Netlify
+  Netlify --> Browser
+```
+
+</div>
+
+---
+layout: section
+---
+
+# The Technology
+
+---
 layout: two-cols
+image: https://site.druxtjs.org/assets/img/umami.fb2904b6.png
 ---
 
 <img src="https://druxtjs.org/logo.svg" class="w-90" />
@@ -160,7 +267,7 @@ layout: two-cols
 
 [DruxtJS.org](https://druxtjs.org)
 
-+ Fully Decoupled
++ Fully Decoupled Drupal
 + Server Side and Client Side Rendering
 + Static Site Generator
 + Vue.js/Nuxt.js
@@ -183,71 +290,59 @@ layout: image-right
 <!--
 - hard problems - editing context, preview, slow builds, large builds
 - gatsby-plugin-drupal transforms Json:API responses to GraphQL, this is inhibiting if you're doing headless (use GraphQL instead)
-
- -->
-
----
-layout: image-left
----
-
-# Headless
-### = Fully Decoupled
-### + Decoupled Authoring Experience
-
-
-<div class="text-sm my-5">
-
-- Content Authoring in Jamstack
-- Content Rendering in Jamstack
-- Content Storage in Drupal
-
-</div>
-
-```mermaid {theme: 'neutral', scale: 0.75}
-flowchart LR
-  subgraph L*MP
-    Drupal --> DB
-    DB --> Drupal
-  end
-  Author --> Jamstack
-  Drupal --> Jamstack
-  Jamstack --> Drupal
-  Jamstack --> Browser
-```
-
+-->
 
 ---
 layout: two-cols
 ---
 
-# Serverless
-### = (Fully Decoupled + Cloud IDE + Full Static)
-### + Static hosting
+## Links
 
-<div class="text-sm my-5">
+<div class="mb-2" />
 
-- Content Authoring in Jamstack
-- Content Rendering in Jamstack
-- Content Storage in Drupal via Tome Sync
+### Druxt
+
+<div class="text-sm my-3">
+
+- Project / Docs: https://druxtjs.org
+- GitHub: [github.com/druxt/druxt.js](https://github.com/druxt/druxt.js)
+- Community: [discord.druxtjs.org](https://discord.druxtjs.org) / #druxt
+
+</div>
+
+### Gastby
+
+<div class="text-sm my-3">
+
+- Project / Docs: https://www.gatsbyjs.com/
+- Github: https://github.com/gatsbyjs/gatsby
 
 </div>
 
 :: right ::
 
-```mermaid {theme: 'neutral', scale: 0.7}
-flowchart LR
-  subgraph GitPod
-    subgraph L*MP
-      TomeSync --> Drupal
-      Drupal --> DB
-      Drupal --> TomeSync
-      DB --> Drupal
-    end
-    Jamstack
-  end
-  Author --> Jamstack
-  Drupal --> Jamstack
-  Jamstack --> Drupal
-  Jamstack -- Deploy Static --> Netlify
-  Netlify --> Browser
-```
+<div class="mb-10" />
+
+### Vue
+
+<div class="text-sm my-3">
+
+- [vuejs.org](https://vuejs.org/)
+
+</div>
+
+### React
+
+<div class="text-sm my-3">
+
+- [reactjs.org](https://reactjs.org/)
+
+</div>
+
+### Articles
+
+<div class="text-sm my-3">
+
+- [lullabot.com/articles/progressive-decoupling-made-easy](https://lullabot.com/articles/progressive-decoupling-made-easy)
+
+</div>
